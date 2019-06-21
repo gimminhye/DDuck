@@ -13,7 +13,7 @@ public class DuckManager {
 														// 좋음
 			this.setVisible(true);// 윈도우에게 화면으로 나간다고 얘기하는거
 		}
-
+ 
 		private void makeDucks() {
 			Random rnd = new Random();
 			for (int i = 0; i < arr.length; i++) {
