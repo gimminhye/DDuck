@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class RedDuck extends Duck{
+public class RedDuck extends Duck implements QuackDuck, FlyDuck {
 	public RedDuck(){
 		super();
 	}
@@ -11,7 +11,19 @@ public class RedDuck extends Duck{
 		// TODO Auto-generated method stub
 		g.setColor(Color.red);
 		g.fillOval(x, y, Duck.SIZE, Duck.SIZE);
-		this.swim(g);
+	}
+
+	@Override
+	public void quack(Graphics g) {
+		// TODO Auto-generated method stub
+		g.drawString("²Ð²Ð", x+Duck.SIZE,y+Duck.SIZE);
+		
+	}
+	@Override
+	public void fly(Graphics g) {
+		// TODO Auto-generated method stub
+		g.drawString("³¯´Ù", x+Duck.SIZE,y);
+		
 	}
 
 }

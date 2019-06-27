@@ -12,7 +12,7 @@ import java.awt.Graphics;
 			// TODO Auto-generated method stub
 			g.setColor(Color.green);
 			g.fillOval(x, y, Duck.SIZE, Duck.SIZE);
-			this.swim(g);
-		}
+
+	}
 
 }
